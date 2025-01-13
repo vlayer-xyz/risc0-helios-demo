@@ -1,0 +1,16 @@
+[package]
+version = "0.1.0"
+name = "guest"
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+helios-consensus-core = { workspace = true }
+serde_cbor = { workspace = true }
+risc0-helios-primitives = { workspace = true }
+alloy-sol-types = { workspace = true }
+ssz-rs = { workspace = true }
+alloy-primitives = { workspace = true }
+tree_hash = { workspace = true }
+risc0-zkvm = "1.2.0"

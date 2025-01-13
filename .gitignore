@@ -1,9 +1,6 @@
 # Cargo build
 **/target
 
-# Cargo config
-.cargo
-
 # Profile-guided optimization
 /tmp
 pgo-data.profdata
@@ -14,8 +11,6 @@ pgo-data.profdata
 # Proofs
 **/proof-with-pis.json
 **/proof-with-io.json
-
-.env
 
 # Generated inputs
 /script/examples/*

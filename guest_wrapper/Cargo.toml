@@ -1,0 +1,17 @@
+[package]
+name = "risc0-helios-guest-wrapper"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+serde = { workspace = true }
+derive_more = { workspace = true }
+bytes = { workspace = true }
+risc0-zkp = { workspace = true }
+
+[build-dependencies]
+risc0-build = { workspace = true }
+
+[package.metadata.risc0]
+methods = ["risc0_guest"]
