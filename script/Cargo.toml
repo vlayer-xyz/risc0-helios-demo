@@ -6,8 +6,8 @@ license.workspace = true
 authors.workspace = true
 
 [[bin]]
-name = "test"
-path = "./bin/test.rs"
+name = "main"
+path = "./bin/main.rs"
 
 [dependencies]
 dotenv = { workspace = true }
