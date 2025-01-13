@@ -1,4 +1,4 @@
-This repository is not a minimal setup for running Helios in Risc0. Instead, it is a modified sp1-helios repository that has been adapted to run Helios in Risc0.
+This repository is not a minimal setup for running Helios in Risc0. Instead, it is a modified [sp1-helios](https://github.com/succinctlabs/sp1-helios) repository that has been adapted to run Helios in Risc0.
 
 ### 1) Running the Project
 To run the program, execute:
