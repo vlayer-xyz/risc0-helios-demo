@@ -4,7 +4,6 @@ This repository is not a minimal setup for running Helios in Risc0. Instead, it 
 To run the program, execute:
 
 ```bash
-Copy code
 RISC0_DEV_MODE=1 cargo run --bin main
 ```
 
