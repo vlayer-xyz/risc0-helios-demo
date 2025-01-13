@@ -12,7 +12,5 @@ pgo-data.profdata
 **/proof-with-pis.json
 **/proof-with-io.json
 
-.env
-
 # Generated inputs
 /script/examples/*
