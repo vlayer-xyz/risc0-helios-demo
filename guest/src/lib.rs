@@ -75,8 +75,6 @@ pub fn main(input: ProofInputs) -> ProofOutputs {
     };
     let head = store.finalized_header.beacon().slot;
 
-    println!("Head: {}", head);
-
     let proof_outputs = ProofOutputs {
         execution_state_root: *store
             .finalized_header
@@ -90,6 +88,5 @@ pub fn main(input: ProofInputs) -> ProofOutputs {
         prev_head: U256::from(prev_head),
         sync_committee_hash,
     };
-    println!("Exec state root: {:?}", proof_outputs.execution_state_root);
     proof_outputs
 }
