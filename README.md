@@ -1,4 +1,15 @@
-### 1) Consensus RPC Setup
+This repository is not a minimal setup for running Helios in Risc0. Instead, it is a modified sp1-helios repository that has been adapted to run Helios in Risc0.
+
+### 1) Running the Project
+To run the program, simply execute:
+
+```bash
+Copy code
+cargo run --bin main
+```
+
+
+### 2) Consensus RPC Setup
 
 To run Risc0 Helios, you need a Beacon Chain node for your source chain. For example, to run an Ethereum mainnet light client, you need an Ethereum mainnet beacon node.
 
@@ -12,11 +23,33 @@ There are a few options for setting up a consensus RPC with "light sync" endpoin
 
 The RPC you just set up will be used as the `SOURCE_CONSENSUS_RPC_URL` in the next step.
 
-### 2) Environment Setup
+### 3) Environment Setup
 
-In the root directory, create a file called `.env` (mirroring `.env.example`) and set the following environment variables:
+In the root directory, there is a file called `.env` with the following environment variables (already filled):
 
 | Parameter | Description |
 |-----------|-------------|
 | `SOURCE_CHAIN_ID` | Chain ID for the source chain. |
 | `SOURCE_CONSENSUS_RPC_URL` | RPC URL for the source chain. See how to get this in the [Consensus RPC Setup](#1-consensus-rpc-setup) section |
+
+### 4) Output
+
+When you run the process, you can expect output similar to the following:
+
+```
+WARNING: proving in dev mode. This will not generate valid, secure proofs.
+Processing update 1 of 1.
+Update 1 is valid.
+Finality update is valid.
+Finality update applied.
+Head: 10829504
+Exec state root: 0x855e15e26223c6f3a8f8f72a37ebb0681192800ab7a7dc61277e2035df01297f
+WARNING: Proving in dev mode does not generate a valid receipt. Receipts generated from this process are invalid and should never be used in production.
+[script/./bin/test.rs:51:5] &proof.stats = SessionStats {
+    segments: 7670,
+    total_cycles: 8042577920,
+    user_cycles: 7093294775,
+    paging_cycles: 921248146,
+    reserved_cycles: 28034999,
+}
+```
