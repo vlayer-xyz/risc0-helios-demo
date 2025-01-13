@@ -6,7 +6,6 @@ use helios_consensus_core::{
     verify_finality_update, verify_update,
 };
 use risc0_helios_primitives::{init_store, ProofInputs, ProofOutputs};
-// use ssz_rs::prelude::*;
 use tree_hash::TreeHash;
 
 /// Program flow:
