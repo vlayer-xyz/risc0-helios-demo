@@ -40,7 +40,7 @@ env_logger = "0.11.3"
 alloy-primitives = "0.7.7"
 alloy = { version = "0.1.1", features = ["full"] }
 anyhow = "1.0.86"
-reqwest = "0.12.5"
+reqwest = { version = "0.12.5", default-features = false, features = ["json", "gzip", "deflate", "charset", "http2", "rustls-tls", "native-tls"] }
 tree_hash = "0.7.0"
 serde_with = { version = "3.4.0", features = ["hex"] }
 cargo_metadata = "0.18"
